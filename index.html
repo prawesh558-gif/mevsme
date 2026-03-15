@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prawesh Chaudhary | Network Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#0f172a;
+color:white;
+scroll-behavior:smooth;
+}
+
+/* NETWORK BACKGROUND */
+
+#network{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+background:#0f172a;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:#020617;
+position:sticky;
+top:0;
+}
+
+nav h2{
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:100px 80px;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-size:48px;
+}
+
+.hero-text h3{
+color:#38bdf8;
+margin:10px 0;
+}
+
+.hero-img img{
+width:320px;
+border-radius:20px;
+box-shadow:0 0 30px #38bdf8;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 24px;
+background:#38bdf8;
+color:black;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* SECTIONS */
+
+section{
+padding:80px;
+}
+
+section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:36px;
+}
+
+/* ABOUT */
+
+.about{
+max-width:800px;
+margin:auto;
+text-align:center;
+line-height:1.7;
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:12px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #38bdf8;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+/* FOOTER */
+
+footer{
+background:#020617;
+text-align:center;
+padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<canvas id="network"></canvas>
+
+<nav>
+
+<h2>Prawesh</h2>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>Prawesh Chaudhary</h1>
+
+<h3 id="typing"></h3>
+
+<p>
+BSc CSIT Graduate from Tribhuvan University with strong interest in
+network engineering, ISP infrastructure, and routing technologies.
+</p>
+
+<a class="btn" href="#contact">Contact Me</a>
+
+</div>
+
+<div class="hero-img">
+<img src="prawesh.jpg">
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="about">
+
+<p>
+
+I am a networking enthusiast and BSc CSIT graduate from Tribhuvan University.
+I enjoy working with routing technologies, troubleshooting ISP networks,
+and building infrastructure for reliable internet connectivity.
+
+</p>
+
+<p>
+
+My focus is on technologies like OSPF, BGP, MPLS, GPON networks, and
+server virtualization using VMware ESXi.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div class="card">
+<h3>Networking</h3>
+<p>IPv4, IPv6, Subnetting, Troubleshooting</p>
+</div>
+
+<div class="card">
+<h3>Routing</h3>
+<p>OSPF, BGP, MPLS</p>
+</div>
+
+<div class="card">
+<h3>ISP Technologies</h3>
+<p>Huawei OLT, GPON, VLAN</p>
+</div>
+
+<div class="card">
+<h3>Server</h3>
+<p>VMware ESXi Virtualization</p>
+</div>
+
+<div class="card">
+<h3>Infrastructure</h3>
+<p>Network Monitoring & ISP Support</p>
+</div>
+
+<div class="card">
+<h3>Learning</h3>
+<p>API Technologies & System Administration</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="contact">
+
+<p>Email: prawesh558@gmail.com</p>
+
+<p>
+LinkedIn:
+<a style="color:#38bdf8;" href="https://www.linkedin.com/in/prawesh-c-a35a6b257">
+Visit Profile
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Prawesh Chaudhary</p>
+
+</footer>
+
+<script>
+
+/* TYPING ANIMATION */
+
+const text=[
+"Network Engineer",
+"ISP Support Specialist",
+"Routing Enthusiast",
+"Server & Virtualization Learner"
+]
+
+let i=0
+let j=0
+let currentText=""
+let isDeleting=false
+
+function type(){
+
+currentText=text[i]
+
+if(!isDeleting){
+j++
+}else{
+j--
+}
+
+document.getElementById("typing").innerHTML=currentText.substring(0,j)
+
+if(!isDeleting && j===currentText.length){
+isDeleting=true
+setTimeout(type,1200)
+return
+}
+
+if(isDeleting && j===0){
+isDeleting=false
+i++
+if(i===text.length){
+i=0
+}
+}
+
+setTimeout(type,100)
+
+}
+
+type()
+
+/* NETWORK PARTICLE ANIMATION */
+
+const canvas=document.getElementById("network")
+const ctx=canvas.getContext("2d")
+
+canvas.width=window.innerWidth
+canvas.height=window.innerHeight
+
+let particles=[]
+
+for(let i=0;i<80;i++){
+
+particles.push({
+x:Math.random()*canvas.width,
+y:Math.random()*canvas.height,
+vx:(Math.random()-0.5)*1,
+vy:(Math.random()-0.5)*1
+})
+
+}
+
+function animate(){
+
+ctx.clearRect(0,0,canvas.width,canvas.height)
+
+particles.forEach(p=>{
+
+p.x+=p.vx
+p.y+=p.vy
+
+if(p.x<0||p.x>canvas.width)p.vx*=-1
+if(p.y<0||p.y>canvas.height)p.vy*=-1
+
+ctx.beginPath()
+ctx.arc(p.x,p.y,2,0,Math.PI*2)
+ctx.fillStyle="#38bdf8"
+ctx.fill()
+
+})
+
+requestAnimationFrame(animate)
+
+}
+
+animate()
+
+</script>
+
+</body>
+</html>
